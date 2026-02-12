@@ -40,17 +40,16 @@ noBtn.addEventListener("touchstart", (e) => {
 
 
 function startHearts() {
-  setInterval(() => {
-    const heart = document.createElement("img");
-    heart.src = "assets/heart.jpg";
-    heart.className = "heart";
+setInterval(() => {
+const heart = document.createElement("img");
+heart.src = "assets/heart.png";
+heart.className = "heart";
+heart.style.left = Math.random() * window.innerWidth + "px";
+document.body.appendChild(heart);
 
-    const maxX = document.documentElement.clientWidth - 30;
-    heart.style.left = Math.random() * maxX + "px";
-    heart.style.bottom = "-30px";
 
-    document.body.appendChild(heart);
-
-    setTimeout(() => heart.remove(), 6000);
-  }, 400);
+setTimeout(() => heart.remove(), 6000);
+}, 300);
 }
+
+
