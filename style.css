@@ -79,10 +79,9 @@ transform: scale(1.1);
 }
 
 .heart {
-position: fixed; /* NOT absolute */
-  width: 22px;
-  pointer-events: none;
-  animation: float 6s linear forwards;
+  position: absolute;
+  width: 25px;
+  animation: float 6s linear infinite;
 }
 
 
@@ -98,4 +97,5 @@ h1 { font-size: 1.6rem; }
 
 html {
   height: -webkit-fill-available;
+
 }
