@@ -42,7 +42,7 @@ noBtn.addEventListener("touchstart", (e) => {
 function startHearts() {
 setInterval(() => {
 const heart = document.createElement("img");
-heart.src = "assets/heart.png";
+heart.src = "assets/heart.jpg";
 heart.className = "heart";
 heart.style.left = Math.random() * window.innerWidth + "px";
 document.body.appendChild(heart);
@@ -51,5 +51,6 @@ document.body.appendChild(heart);
 setTimeout(() => heart.remove(), 6000);
 }, 300);
 }
+
 
 
